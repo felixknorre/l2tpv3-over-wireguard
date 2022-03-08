@@ -9,6 +9,7 @@ The scripts were tested with Ubuntu 21.10 and requires the following software pa
 * wireguard
 
 The required software can be installed by the following script:
+
 ```bash
 sudo ./installPrerequisites.sh
 ```
@@ -20,7 +21,7 @@ After the required software has been installed, a key pair can be generated usin
 sudo ./generateKeypair.sh
 ```
 
-Before the tunnel can be created, the tunnel parameters must be set. Open the file `createTunnel.sh ` and adjust the parameters. After that the script can be executed.
+Before the tunnel can be created, the tunnel parameters must be set. Open the file `createTunnel.sh` and adjust the parameters. After that the script can be executed.
 
 ```bash
 sudo ./createTunnel.sh 
