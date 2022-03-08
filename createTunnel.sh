@@ -33,7 +33,7 @@ Endpoint = ${REMOTE_IP}:${REMOTE_PORT}
 EOF
 
 # start wireguard
-wg-quick up 
+wg-quick up wg0
 # autostart wireguard tunnel after boot
 systemctl enable wg-quick@wg0ct
 
