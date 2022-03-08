@@ -1,13 +1,23 @@
 #!/bin/bash
 
+#------------------------tunnel parameters------------------------#
+# ip address of the other server
 REMOTE_IP=192.168.122.56
-LOCAL_TUNNEL_IP=40.40.40.1
-REMOTE_TUNNEL_IP=40.40.40.2
-LOCAL_PORT=50000
+# wireguard port of the other server
 REMOTE_PORT=50000
-INT_TO_BE_BRIDGED="lo"
-LOCAL_PRIVATE_KEY="eLmKy8orvR6vvDqxR9eGpS+lF/hUwhou8Rdv0BDIp2s="
-REMOTE_PUBLIC_KEY="eHcvc8wmTT9u5RLObckaPsQr/3uTzKlG9obNLUZfMmc="
+# local wireguard port
+LOCAL_PORT=50000
+# local ip address of the tunnel endpoint
+LOCAL_TUNNEL_IP=40.40.40.1
+# remote ip address of the tunnel endpoint
+REMOTE_TUNNEL_IP=40.40.40.2
+# interface to be bridged with the l2tp interface
+INT_TO_BE_BRIDGED="eth1"
+# local private key
+LOCAL_PRIVATE_KEY="secret-key"
+# remote public key of the other server
+REMOTE_PUBLIC_KEY="another-secret-key"
+#-----------------------------------------------------------------#
 
 # create wiregurad config
 cat << EOF > /etc/wireguard/wg0.conf
