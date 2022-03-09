@@ -8,7 +8,7 @@ The scripts were tested with Ubuntu 21.10 and requires the following software pa
 * linux-headers-*
 * wireguard
 
-The required software can be installed by the following script:
+The required software can be installed with the following script:
 
 ```bash
 sudo ./installPrerequisites.sh
